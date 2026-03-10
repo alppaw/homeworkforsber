@@ -39,7 +39,7 @@ module sr_latch (
 endmodule
 ```
 <p align="center">
-  <img src="https://github.com/alppaw/homeworkforsber/blob/main/risc-v/im/rs.png" alt="SR-защелка"><br>
+  <img src="https://github.com/alppaw/homeworkforsber/blob/main/im/rs.png" alt="SR-защелка"><br>
   <em>Схема SR-защелки</em>
 </p>
 ---
@@ -64,7 +64,7 @@ module gated_sr_latch (
 endmodule
 ```
 <p align="center">
-  <img src="https://github.com/alppaw/homeworkforsber/blob/main/risc-v/im/rse.png" alt="SRE-защелка"><br>
+  <img src="https://github.com/alppaw/homeworkforsber/blob/main/im/rse.png" alt="SRE-защелка"><br>
   <em>Схема SRE-защелки</em>
 </p>
 
@@ -94,7 +94,7 @@ endmodule
 ```
 
 <p align="center">
-  <img src="https://github.com/alppaw/homeworkforsber/blob/main/risc-v/im/d.png" alt="D-защелка"><br>
+  <img src="https://github.com/alppaw/homeworkforsber/blob/main/im/d.png" alt="D-защелка"><br>
   <em>Схема D-защелки</em>
 </p>
 ---
