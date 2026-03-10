@@ -42,7 +42,9 @@ endmodule
   <img src="https://github.com/alppaw/homeworkforsber/blob/main/im/rs.png" alt="SR-защелка"><br>
   <em>Схема SR-защелки</em>
 </p>
+
 ---
+
 ## 3. Стробируемая SR-защелка (Gated SR Latch)
 Чтобы управлять моментом времени, когда SR-защелка реагирует на входы, добавляется разрешающий сигнал E (Enable). Сигналы S и R влияют на состояние только тогда, когда E = 1.
 
