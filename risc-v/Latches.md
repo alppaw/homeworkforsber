@@ -102,7 +102,9 @@ endmodule
   <img src="https://github.com/alppaw/homeworkforsber/blob/main/im/d.png" alt="D-защелка"><br>
   <em>Схема D-защелки</em>
 </p>
+
 ---
+
 ## 5. Лучшие практики в SystemVerilog
 Используйте always_latch: Никогда не используйте always_comb или always @* для создания защелок. always_latch заставит компилятор/синтезатор выдать предупреждение, если ваша логика не образует защелку.
 Избегайте непреднамеренных защелок: В комбинаторных блоках (always_comb) всегда прописывайте ветку else для if и ветку default для case.
