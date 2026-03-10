@@ -101,9 +101,3 @@ always_comb begin
     else     out = 1'b0;
 end
 ```
-
-```
-<div align="center">
-<sub>Разработано для инженеров цифровой схемотехники с ❤️</sub>
-</div>
-```
