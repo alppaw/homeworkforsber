@@ -170,6 +170,7 @@ module sr_latch (
     assign Qn = ~(S | Q);
     
 endmodule
+```
 📈 Временная диаграмма
 code
 Text
@@ -185,7 +186,7 @@ Q ___|               |___________|
 Чтобы управлять моментом времени, когда SR-защелка реагирует на входы, добавляется разрешающий сигнал E (Enable). Сигналы S и R влияют на состояние только тогда, когда E = 1.
 👨‍💻 Код на SystemVerilog
 code
-Systemverilog
+```Systemverilog
 module gated_sr_latch (
     input  logic E, // Разрешающий сигнал (Enable)
     input  logic S,
@@ -203,6 +204,7 @@ module gated_sr_latch (
     assign Qn = ~(s_gated | Q);
 
 endmodule
+```
 📈 Временная диаграмма
 code
 Text
@@ -230,7 +232,7 @@ E (Enable)	D (Data)	Q (Output)	Состояние
 👨‍💻 Код на SystemVerilog (Behavioral)
 Для описания D-защелок в SystemVerilog существует специальный блок always_latch. Он сигнализирует синтезатору о том, что вы намеренно создаете защелку.
 code
-Systemverilog
+```Systemverilog
 module d_latch (
     input  logic E, // Enable
     input  logic D, // Data
@@ -246,6 +248,7 @@ module d_latch (
     end
 
 endmodule
+```
 📈 Временная диаграмма
 code
 Text
