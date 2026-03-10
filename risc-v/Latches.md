@@ -38,6 +38,11 @@ module sr_latch (
     assign Qn = ~(S | Q);  
 endmodule
 ```
+<p align="center">
+  <img src="https://github.com/alppaw/homeworkforsber/blob/main/risc-v/im/rs.png" alt="SR-защелка"><br>
+  <em>Схема SR-защелки</em>
+</p>
+---
 ## 3. Стробируемая SR-защелка (Gated SR Latch)
 Чтобы управлять моментом времени, когда SR-защелка реагирует на входы, добавляется разрешающий сигнал E (Enable). Сигналы S и R влияют на состояние только тогда, когда E = 1.
 ```Systemverilog
@@ -58,6 +63,11 @@ module gated_sr_latch (
     assign Qn = ~(s_gated | Q);
 endmodule
 ```
+<p align="center">
+  <img src="https://github.com/alppaw/homeworkforsber/blob/main/risc-v/im/rse.png" alt="SRE-защелка"><br>
+  <em>Схема SRE-защелки</em>
+</p>
+
 ---
 ## 4. D-защелка (Прозрачная / Transparent Latch)
 Это самый популярный тип защелки в цифровом дизайне. Она решает главную проблему SR-защелки — запрещенное состояние (S=1, R=1).
@@ -82,6 +92,11 @@ module d_latch (
     end
 endmodule
 ```
+
+<p align="center">
+  <img src="https://github.com/alppaw/homeworkforsber/blob/main/risc-v/im/d.png" alt="D-защелка"><br>
+  <em>Схема D-защелки</em>
+</p>
 ---
 ## 5. Лучшие практики в SystemVerilog
 Используйте always_latch: Никогда не используйте always_comb или always @* для создания защелок. always_latch заставит компилятор/синтезатор выдать предупреждение, если ваша логика не образует защелку.
