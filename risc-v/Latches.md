@@ -45,7 +45,8 @@ endmodule
 ---
 ## 3. Стробируемая SR-защелка (Gated SR Latch)
 Чтобы управлять моментом времени, когда SR-защелка реагирует на входы, добавляется разрешающий сигнал E (Enable). Сигналы S и R влияют на состояние только тогда, когда E = 1.
-```Systemverilog
+
+```systemverilog
 module gated_sr_latch (
     input  logic E, // Разрешающий сигнал (Enable)
     input  logic S,
@@ -63,6 +64,7 @@ module gated_sr_latch (
     assign Qn = ~(s_gated | Q);
 endmodule
 ```
+
 <p align="center">
   <img src="https://github.com/alppaw/homeworkforsber/blob/main/im/rse.png" alt="SRE-защелка"><br>
   <em>Схема SRE-защелки</em>
@@ -76,7 +78,8 @@ endmodule
 Когда E = 0, защелка защелкивает (сохраняет) последнее значение.
 Для описания D-защелок в SystemVerilog существует специальный блок always_latch. Он сигнализирует синтезатору о том, что вы намеренно создаете защелку.
 code
-```Systemverilog
+
+```systemverilog
 module d_latch (
     input  logic E, // Enable
     input  logic D, // Data
